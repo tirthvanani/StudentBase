@@ -14,7 +14,7 @@ def home(request):
     if query:
         students = students.filter(
             Q(name__icontains=query) | Q(course__icontains=query)
-        )
+        )  
     return render(request,'home.html', {'students':students})
 
 def create_student(request):

@@ -1,67 +1,83 @@
 {% extends 'main.html' %}
 
 {% block content %}
-<div class="container mt-5">
-    <h2 class="text-center mb-4">About Us</h2>
-
-    <div class="row">
-        <!-- About Section -->
-        <div class="col-md-8 mx-auto text-center">
-            <p class="lead">
-                Welcome to our platform! We are a team of passionate individuals dedicated to providing a seamless
-                experience for managing student data. Our goal is to simplify the process of managing student records,
-                creating an easy-to-use interface while maintaining the highest standards of security and performance.
-            </p>
-            <p>
-                Whether you're a teacher, administrator, or student, our platform offers a user-friendly environment
-                to meet all your educational needs. We believe in continuous improvement and value feedback from our
-                users to make the platform better every day.
-            </p>
-        </div>
-    </div>
-
-    <!-- Optional Team Section -->
-    <div class="row mt-5">
-        <h3 class="text-center mb-4">Our Team</h3>
-        <div class="col-md-4 text-center">
-            <div class="card">
-                <img src="https://via.placeholder.com/150" class="card-img-top rounded-circle" alt="Team Member 1">
-                <div class="card-body">
-                    <h5 class="card-title">John Doe</h5>
-                    <p class="card-text">CEO & Founder</p>
-                    <p class="text-muted">John is passionate about technology and education, leading our team to new heights.</p>
-                </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .team {
+            margin-top: 20px;
+        }
+        .team-member {
+            margin-bottom: 15px;
+        }
+        .team-member h3 {
+            margin: 5px 0;
+            color: #007BFF;
+        }
+        .team-member p {
+            margin: 0;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About Us</h1>
+        <p>Welcome to our platform! We are a team of passionate individuals dedicated to providing a seamless experience for managing student data. Our goal is to simplify the process of managing student records, creating an easy-to-use interface while maintaining the highest standards of security and performance.</p>
+        <p>Whether you're a teacher, administrator, or student, our platform offers a user-friendly environment to meet all your educational needs. We believe in continuous improvement and value feedback from our users to make the platform better every day.</p>
+        
+        <h2>Our Team</h2>
+        <div class="team">
+            <div class="team-member">
+                <h3>John Doe</h3>
+                <p><strong>CEO & Founder</strong></p>
+                <p>John is passionate about technology and education, leading our team to new heights.</p>
+            </div>
+            <div class="team-member">
+                <h3>Jane Smith</h3>
+                <p><strong>Lead Developer</strong></p>
+                <p>Jane brings her expertise in software development to create an intuitive platform.</p>
+            </div>
+            <div class="team-member">
+                <h3>Alice Brown</h3>
+                <p><strong>UI/UX Designer</strong></p>
+                <p>Alice is responsible for ensuring that our platform is easy to use and visually appealing.</p>
             </div>
         </div>
-        <div class="col-md-4 text-center">
-            <div class="card">
-                <img src="https://via.placeholder.com/150" class="card-img-top rounded-circle" alt="Team Member 2">
-                <div class="card-body">
-                    <h5 class="card-title">Jane Smith</h5>
-                    <p class="card-text">Lead Developer</p>
-                    <p class="text-muted">Jane brings her expertise in software development to create an intuitive platform.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 text-center">
-            <div class="card">
-                <img src="https://via.placeholder.com/150" class="card-img-top rounded-circle" alt="Team Member 3">
-                <div class="card-body">
-                    <h5 class="card-title">Alice Brown</h5>
-                    <p class="card-text">UI/UX Designer</p>
-                    <p class="text-muted">Alice is responsible for ensuring that our platform is easy to use and visually appealing.</p>
-                </div>
-            </div>
-        </div>
+        
+        <footer>
+            <p>If you have any questions or would like to learn more about our platform, feel free to contact us.</p>
+        </footer>
     </div>
+</body>
+</html>
 
-    <!-- Optional Footer Section -->
-    <div class="row mt-5">
-        <div class="col-12 text-center">
-            <p class="text-muted">
-                If you have any questions or would like to learn more about our platform, feel free to <a href="contact.html">contact us</a>.
-            </p>
-        </div>
-    </div>
-</div>
 {% endblock content %}
